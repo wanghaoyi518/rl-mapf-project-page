@@ -1,520 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta charset="UTF-8" />
+  <title>Deadlock-Free Hybrid RL-MAPF Framework for Zero-Shot Multi-Robot Navigation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Project page for 'Deadlock-Free Hybrid RL-MAPF Framework for Zero-Shot Multi-Robot Navigation' – a hybrid RL + MAPF framework that resolves deadlocks on demand for multi-robot navigation in cluttered, unseen environments."
+  />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
-
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
-  <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-
-
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
-  <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
+  <!-- 如果你最终用 Academic-project-page-template，只需要把 body 里的结构粘进去，
+       让模板自带的 CSS 接管样式；也可以直接用下面这段简单样式。 -->
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+      color: #222;
+      background-color: #fafafa;
+    }
+    a { color: #1d6fd4; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+    header {
+      padding: 32px 0 24px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .title {
+      font-size: 1.9rem;
+      font-weight: 650;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 12px;
+    }
+    .authors {
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+    .affiliations {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 12px;
+    }
+    .venue {
+      font-size: 0.9rem;
+      color: #777;
+    }
+    .button-row {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid #1d6fd4;
+      color: #1d6fd4;
+      font-size: 0.9rem;
+      font-weight: 500;
+      background-color: white;
+    }
+    .btn.primary {
+      background-color: #1d6fd4;
+      color: #fff;
+    }
+    main {
+      padding-top: 24px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 4px;
+    }
+    .teaser {
+      margin: 20px 0;
+      text-align: center;
+    }
+    .teaser img {
+      max-width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      background: #f5f5f5;
+    }
+    .two-col {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .two-col > div {
+      flex: 1 1 280px;
+      min-width: 0;
+    }
+    .gif-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .gif-card {
+      flex: 1 1 260px;
+      min-width: 0;
+      text-align: center;
+    }
+    .gif-card img {
+      width: 100%;
+      max-width: 360px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      background: #f5f5f5;
+    }
+    .gif-caption {
+      font-size: 0.85rem;
+      color: #555;
+      margin-top: 6px;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      background-color: #000;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+    pre {
+      background: #111;
+      color: #e6e6e6;
+      padding: 12px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      overflow-x: auto;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+    }
+    footer {
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #e0e0e0;
+      padding-top: 16px;
+      margin-top: 16px;
+    }
+    @media (max-width: 600px) {
+      .title { font-size: 1.5rem; }
+      header { padding-top: 20px; }
+    }
+  </style>
 </head>
 <body>
-
-
-  <!-- Scroll to Top Button -->
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
+  <div class="page">
+    <header>
+      <div class="title">
+        Deadlock-Free Hybrid RL-MAPF Framework for Zero-Shot Multi-Robot Navigation
       </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
+      <div class="subtitle">
+        A triggered hybrid that augments decentralized RL navigation with on-demand, locally confined MAPF to resolve topological deadlocks.
+      </div>
+
+      <div class="authors">
+        Haoyi Wang<sup>2</sup>, Licheng Luo<sup>1</sup>, Yiannis Kantaros<sup>2</sup>, Bruno Sinopoli<sup>2</sup>, Mingyu Cai<sup>1</sup>
+      </div>
+      <div class="affiliations">
+        <sup>1</sup>Department of Mechanical Engineering, University of California Riverside, USA<br />
+        <sup>2</sup>Department of Electrical and Systems Engineering, Washington University in St. Louis, USA
+      </div>
+      <div class="venue">
+        arXiv:2511.22685 (cs.RO), November 2025
+      </div>
+
+      <div class="button-row">
+        <a class="btn primary" href="https://arxiv.org/abs/2511.22685" target="_blank" rel="noopener noreferrer">
+          Paper (arXiv)
         </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
+        <!-- TODO: 将下面链接替换为真实的 GitHub 链接 -->
+        <a class="btn" href="https://github.com/USERNAME/REPO" target="_blank" rel="noopener noreferrer">
+          Code (GitHub)
         </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
+        <!-- 暂无视频，先注释掉 Video 按钮
+        <a class="btn" href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank" rel="noopener noreferrer">
+          Video
+        </a>
+        -->
+        <a class="btn" href="#bibtex">
+          BibTeX
         </a>
       </div>
-    </div>
-  </div>
+    </header>
 
-  <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+    <main>
+      <!-- ======= Teaser（预留：overview GIF 或主图）======= -->
+      <section id="teaser">
+        <h2>Overview</h2>
+        <p>
+          We study multi-robot navigation in cluttered environments where purely reactive policies
+          often stall at bottlenecks such as doorways and single-lane corridors. Our framework keeps
+          a decentralized RL navigator as the default controller and <em>only</em> hands over a small,
+          locally selected group of agents to a MAPF solver when a deadlock is detected. After
+          resolving the stalemate on a cropped grid with Push-and-Rotate (PnR), agents return to the
+          RL mode and continue tracking their global waypoints.
+        </p>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+        <div class="teaser">
+          <!-- TODO: 用你自己的 overview GIF 或静态图替换这个 src -->
+          <img
+            src="static/images/teaser_placeholder.gif"
+            alt="Teaser GIF placeholder: hybrid RL+MAPF resolving a doorway/corridor deadlock."
+          />
+          <div class="gif-caption">
+            Placeholder for teaser GIF. Replace with a hybrid RL+MAPF overview animation
+            (e.g., doorway/corridor scenario showing deadlock resolution).
+          </div>
+        </div>
+      </section>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+      <!-- ======= Abstract ======= -->
+      <section id="abstract">
+        <h2>Abstract</h2>
+        <p>
+          Multi-robot navigation in cluttered environments must strike a balance between
+          short-horizon collision avoidance and reliable long-range goal completion. In narrow
+          passages and confined spaces, teams controlled by reactive policies (including RL-based
+          ones) are prone to topological deadlocks: groups of agents engage in reciprocal avoidance
+          but make no net progress toward their goals.
+        </p>
+        <p>
+          We propose a hybrid framework that couples a decentralized RL navigator with an
+          on-demand Multi-Agent Path Finding (MAPF) module. A lightweight safety layer monitors local
+          kinematics and waypoint progress to detect persistent standstills. When a deadlock is
+          identified, we crop a small grid around the implicated agents, instantiate a locally
+          confined MAPF instance, and invoke Push-and-Rotate to generate a short dense waypoint list
+          for those agents only. The same RL policy then tracks these dense waypoints while handling
+          local interactions; non-participating agents remain in the RL mode.
+        </p>
+        <p>
+          Across dense doorway and corridor benchmarks, this triggered hybrid reliably turns
+          stalled interactions into successful completions, boosting team success rates from marginal
+          to near-universal while keeping coordination overhead localized. The framework can be
+          plugged into existing RL-based navigators with minimal changes and extends naturally to
+          hierarchical task-planning pipelines for heterogeneous robot teams.
+        </p>
+      </section>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
+      <!-- ======= Method ======= -->
+      <section id="method">
+        <h2>Method</h2>
+        <div class="two-col">
+          <div>
+            <h3>Hybrid RL + MAPF Workflow</h3>
+            <p>
+              Our controller follows a layered design. By default, each agent runs a decentralized
+              RL policy inspired by RVO-shaped state and reward design: the observation encodes
+              VO/RVO geometry to nearby agents and obstacles, and a BiGRU-based encoder aggregates a
+              variable-sized neighbor set into a compact state that is processed by PPO-trained
+              actor–critic heads.
+            </p>
+            <p>
+              For long-range guidance, a grid-based planner (e.g., A*) generates sparse waypoint
+              lists that serve as global references. The RL policy tracks these waypoints while
+              performing reciprocal collision avoidance. This <em>global-waypoints + local RL</em>
+              pattern works well in open regions but can stall when agents must be reordered
+              topologically (e.g., door exchanges, two-way traffic in a single-lane corridor).
+            </p>
+            <p>
+              To handle such cases, we attach a deadlock detector and a locally confined MAPF
+              module as a wrapper around the base RL navigator, without modifying the low-level
+              policy itself.
+            </p>
+          </div>
 
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+          <div>
+            <!-- 可用静态 workflow 图，或之后替换为一个 GIF -->
+            <div class="teaser">
+              <img
+                src="static/images/workflow_placeholder.png"
+                alt="Hybrid RL+MAPF workflow diagram placeholder."
+              />
+              <div class="gif-caption">
+                Placeholder for the hybrid RL+MAPF workflow figure or an animated GIF showing
+                the detect → crop → coordinate → handover pipeline.
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
 
+        <h3>Deadlock Detection</h3>
+        <p>
+          The deadlock detector monitors local motion statistics and reciprocal interactions. It
+          combines three complementary triggers:
+        </p>
+        <ul>
+          <li>
+            <strong>Speed / non-progress trigger:</strong> flags mutual slow-down with negligible
+            goal-directed motion among neighboring agents.
+          </li>
+          <li>
+            <strong>Waypoint-stuck trigger:</strong> detects long-horizon stagnation when an
+            agent’s active waypoint index has not advanced for a prolonged window.
+          </li>
+          <li>
+            <strong>Core-pair risk trigger:</strong> uses short-horizon TTC / minimum-distance
+            proxies to identify mutually “most-at-risk” pairs that seed the minimal coordination set.
+          </li>
+        </ul>
+        <p>
+          A deadlock is declared when any trigger fires under appropriate gating. Starting from a
+          seed agent, we form a small participant group by adding its most-at-risk counterpart and
+          a tiny local closure of neighboring agents involved in the stall. Only this group will be
+          escalated to MAPF; all other agents remain in the RL mode.
+        </p>
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
+        <h3>Locally Confined MAPF with Push-and-Rotate</h3>
+        <p>
+          Once a deadlock is detected, we crop a subgrid around the participant group, project
+          their current poses and active global waypoints to grid cells, and form a discrete MAPF
+          instance. This instance is solved using Push-and-Rotate (PnR), a complete,
+          polynomial-time MAPF algorithm under mild blank-space assumptions. The joint discrete
+          plan is then converted into short dense waypoint lists for each participating agent.
+        </p>
+        <p>
+          During the coordination phase, the same RL policy tracks these dense waypoints under a
+          mild speed cap, providing robustness to model mismatch. Once the dense segments are
+          executed and the stalemate is cleared, agents seamlessly switch back to the default RL
+          navigation and resume following their original global waypoint lists.
+        </p>
+      </section>
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+      <!-- ======= Results + 4 个 GIF ======= -->
+      <section id="results">
+        <h2>Results</h2>
+        <p>
+          We evaluate the framework in two challenging static 2D scenarios designed to stress
+          long-range progress under bottlenecks: a <strong>doorway</strong> environment with a short
+          bottleneck and a <strong>corridor</strong> environment with a long single-lane passage.
+          In both cases, agents start on opposite sides with symmetric start–goal pairs, creating
+          dense bidirectional traffic.
+        </p>
+        <p>
+          Across a range of team sizes, the hybrid RL+MAPF controller dramatically improves
+          success rates compared to the RL-only baseline. The GIFs below visualize typical runs
+          in both scenes, contrasting a purely RL-based navigator (often stuck in deadlock) with
+          the proposed hybrid controller.
+        </p>
 
+        <!-- Doorway: Hybrid vs RL-only -->
+        <h3>Doorway Scenario</h3>
+        <div class="gif-grid">
+          <!-- Doorway Hybrid (SUCCESS) -->
+          <div class="gif-card" id="doorway-hybrid-gif">
+            <img
+              src="static/images/doorway.gif"
+              alt="Doorway scenario: Hybrid RL+MAPF successfully resolving bidirectional traffic."
+            />
+            <div class="gif-caption">
+              Hybrid RL+MAPF in the doorway scenario. When agents stall at the bottleneck, a small
+              subset is lifted to a local MAPF instance; after executing the PnR-generated dense
+              waypoints, all agents clear the doorway and reach their goals (Status: SUCCESS).
+            </div>
+          </div>
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <!-- Doorway RL-only (FAIL / Deadlock) -->
+          <div class="gif-card" id="doorway-deadlock-gif">
+            <img
+              src="static/images/doorway-deadlock.gif"
+              alt="Doorway scenario: RL-only policy falling into a deadlock."
+            />
+            <div class="gif-caption">
+              RL-only baseline in the same doorway scenario. Agents perform reciprocal avoidance
+              but fail to break the deadlock at the bottleneck and eventually time out
+              (Status: FAIL).
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
 
+        <!-- Corridor: Hybrid vs RL-only -->
+        <h3 style="margin-top: 24px;">Corridor Scenario</h3>
+        <div class="gif-grid">
+          <!-- Corridor Hybrid (SUCCESS) -->
+          <div class="gif-card" id="corridor-hybrid-gif">
+            <img
+              src="static/images/corridor.gif"
+              alt="Corridor scenario: Hybrid RL+MAPF successfully handling two-way single-lane traffic."
+            />
+            <div class="gif-caption">
+              Hybrid RL+MAPF in the corridor scenario with two-way single-lane traffic. Occasional
+              local MAPF calls reorder a handful of agents, restoring flow and enabling almost all
+              agents to reach their goals (Status: SUCCESS).
+            </div>
+          </div>
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+          <!-- Corridor RL-only (FAIL / Deadlock) -->
+          <div class="gif-card" id="corridor-deadlock-gif">
+            <img
+              src="static/images/corridor-deadlock.gif"
+              alt="Corridor scenario: RL-only policy stuck in long-lived deadlock."
+            />
+            <div class="gif-caption">
+              RL-only baseline in the corridor scenario. Without explicit coordination, agents form
+              persistent head-on conflicts in the single-lane passage and cannot resolve the
+              deadlock before the time limit (Status: FAIL).
+            </div>
+          </div>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
+      </section>
+
+      <!-- ======= Video section 暂时注释掉（以后有视频再打开）=======
+      <section id="video">
+        <h2>Video</h2>
+        <p>
+          The following video summarizes the hybrid RL+MAPF workflow and showcases qualitative
+          results in doorway and corridor environments, as well as additional scenarios with
+          heterogeneous robots and hierarchical task-planning.
+        </p>
+
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="Hybrid RL-MAPF Project Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
+      </section>
+      ============================================ -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <!-- ======= BibTeX ======= -->
+      <section id="bibtex">
+        <h2>BibTeX</h2>
+        <p>If you find this work useful, please cite:</p>
+        <pre><code>@article{wang2025deadlockfree,
+  title   = {Deadlock-Free Hybrid RL-MAPF Framework for Zero-Shot Multi-Robot Navigation},
+  author  = {Wang, Haoyi and Luo, Licheng and Kantaros, Yiannis and Sinopoli, Bruno and Cai, Mingyu},
+  journal = {arXiv preprint arXiv:2511.22685},
+  year    = {2025},
+  doi     = {10.48550/arXiv.2511.22685}
 }</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
+      </section>
+    </main>
 
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
+    <footer>
+      <div>
+        &copy; 2025 Haoyi Wang, Licheng Luo, Yiannis Kantaros, Bruno Sinopoli, and Mingyu Cai.
       </div>
-    </div>
+      <div>
+        This page describes the paper
+        <em>Deadlock-Free Hybrid RL-MAPF Framework for Zero-Shot Multi-Robot Navigation</em>.
+      </div>
+      <div style="margin-top: 4px;">
+        <!-- 如果最后用 Academic-project-page-template，可以在这里加一句模板 credit -->
+        <!-- Example: Template adapted from the Academic Project Page Template by Eliahu Horwitz. -->
+      </div>
+    </footer>
   </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
